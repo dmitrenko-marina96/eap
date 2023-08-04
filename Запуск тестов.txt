@@ -1,0 +1,22 @@
+npx nightwatch -t test/authPositive.js
+
+npx nightwatch -t test/authNegative.js
+
+npx nightwatch -t test/logout.js
+
+npx nightwatch -t test/changePassword.js
+
+npx nightwatch -t test/services.js
+
+npx nightwatch -t test/createRequest.js
+
+npx nightwatch -t test/zayavkiForm.js
+
+npx nightwatch -t test/bookmarks.js
+
+npx nightwatch -t test/bookmarks2.js
+
+npx nightwatch -t test/turnkeyPos.js
+
+npx nightwatch -t test/turnkeyNeg.js
+
