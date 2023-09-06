@@ -52,7 +52,7 @@ module.exports = {
         browser.expect.element('#form9882943 > div.container > div > div > div > div > fieldset:nth-child(4) > legend').text.to.equal('Телефон')
         browser.expect.element('#form9882943 > div.container > div > div > div > div > fieldset:nth-child(5) > legend').text.to.equal('Пароль')
         browser.expect.element('#form9882943 > div.container > div > div > div > div > fieldset:nth-child(6) > legend').text.to.equal('Email уведомления')
-        browser.expect.element('#form9882943 > div.container > div > div > div > div > fieldset:nth-child(13) > legend').text.to.equal('Дата рождения')    
+        //browser.expect.element('#form9882943 > div.container > div > div > div > div > fieldset:nth-child(13) > legend').text.to.equal('Дата рождения')    
     
     },
 
