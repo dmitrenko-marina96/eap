@@ -1,5 +1,6 @@
 module.exports = {
     before(browser) {
+        browser.resizeWindow(1440, 800)
         browser
             .page.auth()
             .navigate()
@@ -31,7 +32,7 @@ module.exports = {
            .assert.urlContains('https://lk-zabota.pravocard.ru/usluga-10141989/10030650/?is_parent=1')
            .assert.titleContains('Юридическая поддержка', 'title ok')
            .assert.textContains("h2", "Юридическая поддержка")
-           .expect.element('#page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible;
+           .expect.element('#menu_10030649_page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible;
            //.expect.element('#page_boxes_1').to.be.visible
     },
         
@@ -65,7 +66,7 @@ module.exports = {
             .assert.urlContains('https://lk-zabota.pravocard.ru/usluga-10141989/10206027/?is_parent=1')
             .assert.titleContains('Консультация по вопросам налогов', 'title ok')
             .assert.textContains("h2", "Консультация по вопросам налогов") 
-            .expect.element('#page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible
+            .expect.element('#menu_10030649_page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible
     },
 
     'Click back2': function(browser) {
@@ -98,7 +99,7 @@ module.exports = {
            .assert.urlContains('https://lk-zabota.pravocard.ru/usluga-10141989/10030655/?is_parent=1')
            .assert.titleContains('Финансовое консультирование', 'title ok')
            .assert.textContains("h2", "Финансовое консультирование")
-           .expect.element('#page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible
+           .expect.element('#menu_10030649_page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible
     },
 
     'Click back3': function(browser) {
@@ -119,7 +120,7 @@ module.exports = {
            .assert.urlContains('https://lk-zabota.pravocard.ru/usluga-10141989/10141754/?is_parent=1')
            .assert.titleContains('Здоровый образ жизни', 'title ok')
            .assert.textContains("h2", "Здоровый образ жизни")
-           .expect.element('#page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible
+           .expect.element('#menu_10030649_page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible
     },
 
     'Click back4': function(browser) {
@@ -140,7 +141,7 @@ module.exports = {
            .assert.urlContains('https://lk-zabota.pravocard.ru/usluga-10141989/10030653/?is_parent=1')
            .assert.titleContains('Психологическая поддержка', 'title ok')
            .assert.textContains("h2", "Психологическая поддержка")
-           .expect.element('#page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible
+           .expect.element('#menu_10030649_page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible
     },
 
     'Click back5': function(browser) {
@@ -174,7 +175,7 @@ module.exports = {
            .assert.urlContains('https://lk-zabota.pravocard.ru/usluga-10141989/10051998/?is_parent=1')
            .assert.titleContains('Помощь по дому', 'title ok')
            .assert.textContains("h2", "Помощь по дому")
-           .expect.element('#page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible
+           .expect.element('#menu_10030649_page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible
     },
 
     'Click back6': function(browser) {
@@ -220,7 +221,7 @@ module.exports = {
            .assert.urlContains('https://lk-zabota.pravocard.ru/usluga-10141989/10051999/?is_parent=1')
            .assert.titleContains('Авто Ассистанс', 'title ok')
            .assert.textContains("h2", "Авто Ассистанс")
-           .expect.element('#page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible
+           .expect.element('#menu_10030649_page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible
     },
 
     'Click back7': function(browser) {

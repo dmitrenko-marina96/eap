@@ -4,6 +4,7 @@
 
 module.exports = {
     before(browser) {
+        browser.resizeWindow(1440, 800)
         browser
             .page.auth()
             .navigate()

@@ -1,5 +1,6 @@
 module.exports = {
     before(browser) {
+        browser.resizeWindow(1440, 800)
         browser
             .page.auth()
             .navigate()
@@ -33,7 +34,7 @@ module.exports = {
            .assert.textContains("h2", "Юридическая поддержка")
            .expect.element('#listingForm > div > div:nth-child(4) > div > div:nth-child(2) > h3 > a').text.to.equal('Гребнева Наталья') // проверка, что данный спец не на 1 месте в списке
         browser   
-           .expect.element('#page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible
+           .expect.element('#menu_10030649_page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible // видимость фильтра
     },
 
     'Поставить лайк и обновить страницу': function(browser) {

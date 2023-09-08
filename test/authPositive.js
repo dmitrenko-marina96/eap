@@ -1,5 +1,6 @@
 module.exports = {
     before(browser) {
+        browser.resizeWindow(1440, 800)
         browser
             .url('https://lk-zabota.pravocard.ru/login/')
             .waitForElementVisible('#ajax-register-form');       
