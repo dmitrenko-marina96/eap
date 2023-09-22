@@ -6,11 +6,19 @@ npx nightwatch -t test/logout.js
 
 npx nightwatch -t test/changePassword.js
 
+npx nightwatch -t test/changeProfile.js
+
 npx nightwatch -t test/services.js
 
 npx nightwatch -t test/createRequest.js
 
 npx nightwatch -t test/zayavkiForm.js
+
+npx nightwatch -t test/bezTematiki.js
+
+npx nightwatch -t test/pomoshPos.js
+
+npx nightwatch -t test/pomoshNeg.js
 
 npx nightwatch -t test/bookmarks.js
 
@@ -21,3 +29,5 @@ npx nightwatch -t test/turnkeyPos.js
 npx nightwatch -t test/turnkeyNeg.js
 
 npx nightwatch -t test/telemedicine.js
+
+npx nightwatch -t test/telemedicineForm.js
