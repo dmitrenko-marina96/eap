@@ -35,7 +35,7 @@ module.exports = {
             .expect.element('.listing-panel-search').to.be.visible // фильтр
     },
 
-    'Проверка, что в фильтре отображаются специалисты сервиса Телемедицина': function() {
+    'Проверка, что в фильтре отображаются все специалисты': function() {
         browser.click('button[class="form-control dropdown-toggle bs-placeholder"]')
 
         browser.expect.element('div[class="dropdown-menu show"] > div > ul > li:nth-child(2)').text.to.equal('Юрист')
