@@ -20,6 +20,8 @@ npx nightwatch -t test/pomoshPos.js
 
 npx nightwatch -t test/pomoshNeg.js
 
+npx nightwatch -t test/bookmarksFilter.js
+
 npx nightwatch -t test/bookmarks.js
 
 npx nightwatch -t test/bookmarks2.js
