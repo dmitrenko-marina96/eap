@@ -35,3 +35,5 @@ npx nightwatch -t test/telemedicineForm.js
 npx nightwatch -t test/telemedicineForm2.js
 
 npx nightwatch -t test/telemedicineForm3.js
+
+npx nightwatch -t test/bookmarksTelemedFilter.js
