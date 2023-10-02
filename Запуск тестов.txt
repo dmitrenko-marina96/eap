@@ -30,6 +30,12 @@ npx nightwatch -t test/turnkeyPos.js
 
 npx nightwatch -t test/turnkeyNeg.js
 
+npx nightwatch -t test/autoexpertForm.js
+
+npx nightwatch -t test/houseMasterForm.js
+
+npx nightwatch -t test/cleaningForm.js
+
 npx nightwatch -t test/telemedicine.js
 
 npx nightwatch -t test/telemedicineForm.js
