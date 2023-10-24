@@ -32,7 +32,7 @@ module.exports = {
            .assert.urlContains('https://lk-zabota.pravocard.ru/usluga-10141989/10030650/?is_parent=1')
            .assert.titleContains('Юридическая поддержка', 'title ok')
            .assert.textContains("h2", "Юридическая поддержка")
-           .expect.element('#listingForm > div > div:nth-child(4) > div > div:nth-child(2) > h3 > a').text.to.equal('Гребнева Наталья') // проверка, что данный спец не на 1 месте в списке
+           .expect.element('#listingForm > div > div:nth-child(3) > div > div:nth-child(2) > h3 > a').text.to.equal('Гребнева Наталья') // проверка, что данный спец не на 1 месте в списке
         browser   
            .expect.element('#menu_10030649_page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible // видимость фильтра
     },

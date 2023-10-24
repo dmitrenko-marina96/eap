@@ -39,7 +39,7 @@ module.exports = {
 
     'Проверка формы /zajavki-9886142/add/': function(browser) {
         browser
-            .click('#AJAX_MAIN>div>div>div>div>div>div:nth-child(4)')
+            .click('.d-lg-inline')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
