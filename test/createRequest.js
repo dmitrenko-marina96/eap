@@ -37,7 +37,7 @@ module.exports = {
 
     'Нажать на кнопку Создать заявку': function(browser) {
         browser
-            .click('#AJAX_MAIN>div>div>div>div>div>div:nth-child(4)')
+            .click('.d-lg-inline')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
@@ -60,6 +60,6 @@ module.exports = {
             .setValue('input[name="content_params_id[442][10053251][value]"]', 'Тест разработчиков')
             .setValue('textarea[name="content_params_id[442][10053252][value]"]', 'Тестовое сообщение')
             .expect.element('button[type="submit"]').to.be.enabled 
-           //.click('button[type="submit"]');
+            //.click('button[type="submit"]');
     }   
 };      
