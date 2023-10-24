@@ -14,6 +14,8 @@ npx nightwatch -t test/createRequest.js
 
 npx nightwatch -t test/zayavkiForm.js
 
+npx nightwatch -t test/zayavkiForm2.js
+
 npx nightwatch -t test/bezTematiki.js
 
 npx nightwatch -t test/pomoshPos.js
