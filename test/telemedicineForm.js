@@ -1,6 +1,7 @@
 // проверки формы создания заявки add, смена рубрики, отображение нужных полей в форме
 
 module.exports = {
+    '@tags': ['form'],
     before(browser) {
         browser.resizeWindow(1440, 800)
         browser

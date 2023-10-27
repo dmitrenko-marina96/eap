@@ -47,3 +47,12 @@ npx nightwatch -t test/telemedicineForm2.js
 npx nightwatch -t test/telemedicineForm3.js
 
 npx nightwatch -t test/bookmarksTelemedFilter.js
+
+
+Запуск по тегам:
+
+npx nightwatch --tag profile --tag important
+npx nightwatch --tag bookmark
+npx nightwatch --tag form
+npx nightwatch --tag form --tag nalog
+npx nightwatch --tag usluga

@@ -1,6 +1,7 @@
 // проверки формы Выезда мастера по дому
 
 module.exports = {
+    '@tags': ['form'],
     before(browser) {
         browser.resizeWindow(1440, 800)
         browser

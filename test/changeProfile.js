@@ -1,4 +1,5 @@
 module.exports = {
+    '@tags': ['profile'],
     before(browser) {
         browser
             .page.auth()

@@ -1,4 +1,5 @@
 module.exports = {
+    '@tags': ['form', 'nalog'],
     before(browser) {
         browser.resizeWindow(1440, 800)
         browser

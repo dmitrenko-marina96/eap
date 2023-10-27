@@ -1,4 +1,5 @@
 module.exports = {
+    '@tags': ['profile', 'important'],
     before(browser) {
         browser
             .url('https://lk-zabota.pravocard.ru/login/')
