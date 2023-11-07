@@ -20,3 +20,9 @@ npx nightwatch -t test/turnkeyPos.js
 
 npx nightwatch -t test/turnkeyNeg.js
 
+npx nightwatch -t test/pomoshPos.js
+
+npx nightwatch -t test/pomoshNeg.js
+
+npx nightwatch -t test/bezTematiki.js
+
