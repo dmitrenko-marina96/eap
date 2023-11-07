@@ -35,8 +35,8 @@ module.exports = {
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
             .assert.urlContains('https://lk-zabota.pravocard.ru/bookmarks/')
-            .assert.titleContains('Избранные специалисты', 'title ok')
-            .assert.textContains("h2", "Избранные специалисты")
+            .assert.titleContains('Избранное', 'title ok')
+            .assert.textContains("h2", "Избранное")
             .expect.element('.listing-panel-search').to.be.visible
     },
 
@@ -48,8 +48,8 @@ module.exports = {
         
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
-            .assert.titleContains('Избранные специалисты', 'title ok')
-            .assert.textContains("h2", "Избранные специалисты")
+            .assert.titleContains('Избранное', 'title ok')
+            .assert.textContains("h2", "Избранное")
             .expect.element('div[class="dropdown bootstrap-select form-control"] > button > div > div > div').text.to.equal('Юрист')
             //.expect.element('#listing-menu-9882915').to.be.visible
     },
@@ -60,8 +60,8 @@ module.exports = {
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
             .assert.urlContains('https://lk-zabota.pravocard.ru/bookmarks/')
-            .assert.titleContains('Избранные специалисты', 'title ok')
-            .assert.textContains("h2", "Избранные специалисты")
+            .assert.titleContains('Избранное', 'title ok')
+            .assert.textContains("h2", "Избранное")
             .expect.element('.listing-panel-search').to.be.visible
     },
 
@@ -72,8 +72,8 @@ module.exports = {
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
-            .assert.titleContains('Избранные специалисты', 'title ok')
-            .assert.textContains("h2", "Избранные специалисты")
+            .assert.titleContains('Избранное', 'title ok')
+            .assert.textContains("h2", "Избранное")
             .assert.textContains("h3", "Иванов Иван")   
     },
 
@@ -85,8 +85,8 @@ module.exports = {
             .click('button[type="submit"]')
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
-            .assert.titleContains('Избранные специалисты', 'title ok')
-            .assert.textContains("h2", "Избранные специалисты")
+            .assert.titleContains('Избранное', 'title ok')
+            .assert.textContains("h2", "Избранное")
             .assert.textContains("h3", "Иванов Иван")
     },
 
@@ -101,8 +101,8 @@ module.exports = {
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
-            .assert.titleContains('Избранные специалисты', 'title ok')
-            .assert.textContains("h2", "Избранные специалисты")
+            .assert.titleContains('Избранное', 'title ok')
+            .assert.textContains("h2", "Избранное")
             .assert.textContains("#listing-menu-9882915 > div > div", "Информация отсутствует...") 
     }       
 };        
