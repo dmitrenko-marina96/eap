@@ -57,8 +57,8 @@ module.exports = {
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
             .assert.urlContains('https://lk-zabota.pravocard.ru/bookmarks/')
-            .assert.titleContains('Избранные специалисты', 'title ok')
-            .assert.textContains("h2", "Избранные специалисты")
+            .assert.titleContains('Избранное', 'title ok')
+            .assert.textContains("h2", "Избранное")
             .expect.element('#listing-menu-9882915 > div > div:nth-child(1) > div > div:nth-child(2) > h3').text.to.equal('Гребнева Наталья') // проверка, что спец есть в закладках
     },
 
@@ -79,8 +79,8 @@ module.exports = {
          browser
             .waitForElementVisible('body', 'Заголовок загружен')
             .assert.urlContains('https://lk-zabota.pravocard.ru/bookmarks/')
-            .assert.titleContains('Избранные специалисты', 'title ok')
-            .assert.textContains("h2", "Избранные специалисты")
+            .assert.titleContains('Избранное', 'title ok')
+            .assert.textContains("h2", "Избранное")
             .expect.element('#listing-menu-9882915 > div > div:nth-child(1) > div > div:nth-child(2) > h3').text.to.equal('Гребнева Наталья') // проверка, что спец есть в закладках
     },
 
@@ -91,8 +91,8 @@ module.exports = {
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
-            .assert.titleContains('Избранные специалисты', 'title ok')
-            .assert.textContains("h2", "Избранные специалисты")
+            .assert.titleContains('Избранное', 'title ok')
+            .assert.textContains("h2", "Избранное")
             .assert.textContains("h3", "Гребнева Наталья")
     },
 
@@ -112,8 +112,8 @@ module.exports = {
         
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
-            .assert.titleContains('Избранные специалисты', 'title ok')
-            .assert.textContains("h2", "Избранные специалисты")
+            .assert.titleContains('Избранное', 'title ok')
+            .assert.textContains("h2", "Избранное")
             .expect.element('div[class="dropdown bootstrap-select form-control"] > button > div > div > div').text.to.equal('Юрист')
         browser   
            .expect.element('#listing-menu-9882915').to.be.visible
@@ -136,8 +136,8 @@ module.exports = {
         
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
-            .assert.titleContains('Избранные специалисты', 'title ok')
-            .assert.textContains("h2", "Избранные специалисты")
+            .assert.titleContains('Избранное', 'title ok')
+            .assert.textContains("h2", "Избранное")
             .assert.textContains("h3", "Гребнева Наталья")
     }, 
 
@@ -160,8 +160,8 @@ module.exports = {
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
-            .assert.titleContains('Избранные специалисты', 'title ok')
-            .assert.textContains("h2", "Избранные специалисты")
+            .assert.titleContains('Избранное', 'title ok')
+            .assert.textContains("h2", "Избранное")
             .assert.textContains("#listing-menu-9882915 > div > div", "Информация отсутствует...") 
     },
 
@@ -180,8 +180,8 @@ module.exports = {
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
             .assert.urlContains('https://lk-zabota.pravocard.ru/bookmarks/')
-            .assert.titleContains('Избранные специалисты', 'title ok')
-            .assert.textContains("h2", "Избранные специалисты")
+            .assert.titleContains('Избранное', 'title ok')
+            .assert.textContains("h2", "Избранное")
             .expect.element('#listing-menu-9882915 > div > div:nth-child(1) > div > div:nth-child(2) > h3').text.to.not.equal('Гребнева Наталья')
     },
 
@@ -196,7 +196,7 @@ module.exports = {
     },
 
    'Перейти в раздел Юридическая поддержка': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(1) > a')
+        browser.click('#listingForm > div > div > div:nth-child(1) > div > a')
 
         browser
            .waitForElementVisible('body', 'Заголовок загружен')
@@ -260,8 +260,8 @@ module.exports = {
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
             .assert.urlContains('https://lk-zabota.pravocard.ru/bookmarks/')
-            .assert.titleContains('Избранные специалисты', 'title ok')
-            .assert.textContains("h2", "Избранные специалисты")
+            .assert.titleContains('Избранное', 'title ok')
+            .assert.textContains("h2", "Избранное")
             .expect.element('#listing-menu-9882915 > div > div:nth-child(1) > div > div:nth-child(2) > h3').text.to.not.equal('Гребнева Наталья')
     }
 };
