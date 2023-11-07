@@ -3,6 +3,7 @@
 //предварительно добавить юриста в избранное - Иванов Иван
 
 module.exports = {
+    '@tags': ['bookmark'],
     before(browser) {
         browser.resizeWindow(1440, 800)
         browser

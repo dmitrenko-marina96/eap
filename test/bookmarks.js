@@ -1,4 +1,5 @@
 module.exports = {
+    '@tags': ['bookmark'],
     before(browser) {
         browser.resizeWindow(1440, 800)
         browser
@@ -32,7 +33,7 @@ module.exports = {
            .assert.urlContains('https://lk-zabota.pravocard.ru/usluga-10141989/10030650/?is_parent=1')
            .assert.titleContains('Юридическая поддержка', 'title ok')
            .assert.textContains("h2", "Юридическая поддержка")
-           .expect.element('#listingForm > div > div:nth-child(4) > div > div:nth-child(2) > h3 > a').text.to.equal('Гребнева Наталья') // проверка, что данный спец не на 1 месте в списке
+           .expect.element('#listingForm > div > div:nth-child(3) > div > div:nth-child(2) > h3 > a').text.to.equal('Гребнева Наталья') // проверка, что данный спец не на 1 месте в списке
         browser   
            .expect.element('#menu_10030649_page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible // видимость фильтра
     },
@@ -47,7 +48,7 @@ module.exports = {
             .assert.titleContains('Юридическая поддержка', 'title ok')
             .assert.textContains("h2", "Юридическая поддержка")
             .assert.attributeEquals('#Bookmark9981007 > button','class', 'btn-mark btn btn-sm btn-warning text-white' ) // проверка, что сердечко выделено
-            .expect.element('#listingForm > div > div:nth-child(1) > div > div:nth-child(2) > h3 > a').text.to.equal('Гребнева Наталья') // проверка, что после обеовления страницы спец, которому поствили сердечко, стал первым в списке
+            .expect.element('#listingForm > div > div:nth-child(2) > div > div:nth-child(2) > h3 > a').text.to.equal('Гребнева Наталья') // проверка, что после обновления страницы спец, которому поствили сердечко, стал первым в списке
     },
 
     'Переход в закладки': function(browser) {
@@ -203,7 +204,7 @@ module.exports = {
            .assert.titleContains('Юридическая поддержка', 'title ok')
            .assert.textContains("h2", "Юридическая поддержка")
            .assert.attributeEquals('#Bookmark9981007 > button','class', 'btn-mark btn btn-sm btn-trans' ) // проверка, что сердечко не выделено
-           .expect.element('#page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible
+           .expect.element('#menu_10030649_page_boxes_1 > div.d-flex.flex-wrap.rounded.bg-light.p-3.listing-panel-search').to.be.visible
     },
 
      'Поставить лайк и обновить страницу 2': function(browser) {
@@ -216,11 +217,11 @@ module.exports = {
             .assert.titleContains('Юридическая поддержка', 'title ok')
             .assert.textContains("h2", "Юридическая поддержка")
             .assert.attributeEquals('#Bookmark9981007 > button','class', 'btn-mark btn btn-sm btn-warning text-white' ) // проверка, что сердечко выделено
-            .expect.element('#listingForm > div > div:nth-child(1) > div > div:nth-child(2) > h3 > a').text.to.equal('Гребнева Наталья') // проверка, что после обновления страницы спец, которому поствили сердечко, стал первым в списке
+            .expect.element('#listingForm > div > div:nth-child(2) > div > div:nth-child(2) > h3 > a').text.to.equal('Гребнева Наталья') // проверка, что после обновления страницы спец, которому поствили сердечко, стал первым в списке
     },
 
     'Переход в спеца из списка спецов': function(browser) {
-        browser.click('#listingForm > div > div:nth-child(1) > div > div:nth-child(2) > h3 > a')
+        browser.click('#listingForm > div > div:nth-child(2) > div > div:nth-child(2) > h3 > a')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')

@@ -6,11 +6,23 @@ npx nightwatch -t test/logout.js
 
 npx nightwatch -t test/changePassword.js
 
+npx nightwatch -t test/changeProfile.js
+
 npx nightwatch -t test/services.js
 
 npx nightwatch -t test/createRequest.js
 
 npx nightwatch -t test/zayavkiForm.js
+
+npx nightwatch -t test/zayavkiForm2.js
+
+npx nightwatch -t test/bezTematiki.js
+
+npx nightwatch -t test/pomoshPos.js
+
+npx nightwatch -t test/pomoshNeg.js
+
+npx nightwatch -t test/bookmarksFilter.js
 
 npx nightwatch -t test/bookmarks.js
 
@@ -20,9 +32,27 @@ npx nightwatch -t test/turnkeyPos.js
 
 npx nightwatch -t test/turnkeyNeg.js
 
-npx nightwatch -t test/pomoshPos.js
+npx nightwatch -t test/autoexpertForm.js
 
-npx nightwatch -t test/pomoshNeg.js
+npx nightwatch -t test/houseMasterForm.js
 
-npx nightwatch -t test/bezTematiki.js
+npx nightwatch -t test/cleaningForm.js
 
+npx nightwatch -t test/telemedicine.js
+
+npx nightwatch -t test/telemedicineForm.js
+
+npx nightwatch -t test/telemedicineForm2.js
+
+npx nightwatch -t test/telemedicineForm3.js
+
+npx nightwatch -t test/bookmarksTelemedFilter.js
+
+
+Запуск по тегам:
+
+npx nightwatch --tag profile --tag important
+npx nightwatch --tag bookmark
+npx nightwatch --tag form
+npx nightwatch --tag form --tag nalog
+npx nightwatch --tag usluga
