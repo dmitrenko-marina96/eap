@@ -31,8 +31,8 @@ module.exports = {
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
             .assert.urlContains('https://lk-zabota.pravocard.ru/bookmarks/')
-            .assert.titleContains('Избранные специалисты', 'title ok')
-            .assert.textContains("h2", "Избранные специалисты")
+            .assert.titleContains('Избранное', 'title ok')
+            .assert.textContains("h2", "Избранное")
             .expect.element('.listing-panel-search').to.be.visible // фильтр
     },
 
