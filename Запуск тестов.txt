@@ -28,6 +28,8 @@ npx nightwatch -t test/bookmarks.js
 
 npx nightwatch -t test/bookmarks2.js
 
+npx nightwatch -t test/bookmarksUslugi.js
+
 npx nightwatch -t test/turnkeyPos.js
 
 npx nightwatch -t test/turnkeyNeg.js
