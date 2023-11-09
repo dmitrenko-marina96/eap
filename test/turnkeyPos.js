@@ -26,7 +26,7 @@ module.exports = {
     },
     
     'Services taxes': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(2) > a')
+        browser.click('#listingForm > div > div > div:nth-child(2) > div > a')
         
         browser
            .waitForElementVisible('body', 'Заголовок загружен')
@@ -38,7 +38,7 @@ module.exports = {
     },
 
     'Services turnkey': function(browser) {    
-        browser.click('#listingForm > div > div > div:nth-child(2) > a')
+        browser.click('#listingForm > div > div > div:nth-child(2) > div > a')
         
         browser
             .waitForElementVisible('body', 'Заголовок загружен')

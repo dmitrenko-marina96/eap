@@ -27,7 +27,7 @@ module.exports = {
     
     'Переход в Налоговый вычет': function(browser) {
         browser
-           .click('#listingForm > div > div > div:nth-child(2) > a')
+           .click('#listingForm > div > div > div:nth-child(2) > div > a')
         browser
            .waitForElementVisible('body', 'Заголовок загружен')
            .assert.urlContains('https://lk-zabota.pravocard.ru/usluga-10141989/10206025/?is_parent=1')
@@ -39,7 +39,7 @@ module.exports = {
 
     'Переход в форму создания заявки НВ': function(browser) {    
         browser
-            .click('#listingForm > div > div > div:nth-child(2) > a')
+            .click('#listingForm > div > div > div:nth-child(2) > div > a')
         browser.pause(2000)    
         
         browser
