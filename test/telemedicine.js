@@ -26,7 +26,7 @@ module.exports = {
     },
 
     'Переход в раздел Телемедицина': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(5) > a')
+        browser.click('#listingForm > div > div > div:nth-child(5) > div > a')
    
         browser
            .waitForElementVisible('body', 'Заголовок загружен')

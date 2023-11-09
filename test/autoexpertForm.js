@@ -81,7 +81,7 @@ module.exports = {
     },
 
     'Переход в раздел Авто Ассистанс': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(7) > a')
+        browser.click('#listingForm > div > div > div:nth-child(7) > div > a')
 
         browser
            .waitForElementVisible('body', 'Заголовок загружен')
@@ -93,7 +93,7 @@ module.exports = {
     },
 
     'Переход к созданию заявки Выезд автоэксперта': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(2) > a')
+        browser.click('#listingForm > div > div > div:nth-child(2) > div > a')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')

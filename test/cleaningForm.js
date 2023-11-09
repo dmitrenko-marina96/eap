@@ -81,7 +81,7 @@ module.exports = {
     },
 
     'Переход в раздел Помощь по дому': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(6) > a')
+        browser.click('#listingForm > div > div > div:nth-child(6) > div > a')
 
         browser
            .waitForElementVisible('body', 'Заголовок загружен')
@@ -94,7 +94,7 @@ module.exports = {
     },
 
     'Переход к созданию заявки Клининг': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(3) > a')
+        browser.click('#listingForm > div > div > div:nth-child(3) > div > a')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')

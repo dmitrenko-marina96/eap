@@ -26,7 +26,7 @@ module.exports = {
     },
 
     'Services lawyer': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(1) > a')
+        browser.click('#listingForm > div > div > div:nth-child(1) > div > a')
    
         browser
            .waitForElementVisible('body', 'Заголовок загружен')
@@ -48,7 +48,7 @@ module.exports = {
     },
 
     'Services taxes': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(2) > a')
+        browser.click('#listingForm > div > div > div:nth-child(2) > div > a')
    
         browser
            .waitForElementVisible('body', 'Заголовок загружен')
@@ -60,7 +60,7 @@ module.exports = {
     },
 
     'Services taxman': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(1) > a')
+        browser.click('#listingForm > div > div > div:nth-child(1) > div > a')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
@@ -93,7 +93,7 @@ module.exports = {
     },        
 
     'Services financier': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(3) > a')
+        browser.click('#listingForm > div > div > div:nth-child(3) > div > a')
         
         browser
            .waitForElementVisible('body', 'Заголовок загружен')
@@ -114,7 +114,7 @@ module.exports = {
     },
 
     'Services zozh': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(4) > a')
+        browser.click('#listingForm > div > div > div:nth-child(4) > div > a')
 
         browser
            .waitForElementVisible('body', 'Заголовок загружен')
@@ -135,7 +135,7 @@ module.exports = {
     },
     
     'Services psychologist': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(5) > a')
+        browser.click('#listingForm > div > div > div:nth-child(5) > div > a')
 
         browser
            .waitForElementVisible('body', 'Заголовок загружен')
@@ -156,7 +156,7 @@ module.exports = {
     },
 
     'Services home': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(6) > a')
+        browser.click('#listingForm > div > div > div:nth-child(6) > div > a')
 
         browser
            .waitForElementVisible('body', 'Заголовок загружен')
@@ -169,7 +169,7 @@ module.exports = {
     },
 
     'Services househelper': function(browser) { 
-        browser.click('#listingForm > div > div > div:nth-child(1) > a')
+        browser.click('#listingForm > div > div > div:nth-child(1) > div > a')
 
         browser
            .waitForElementVisible('body', 'Заголовок загружен')
@@ -203,7 +203,7 @@ module.exports = {
     },
 
     'Services auto': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(7) > a')
+        browser.click('#listingForm > div > div > div:nth-child(7) > div > a')
 
         browser
            .waitForElementVisible('body', 'Заголовок загружен')
@@ -215,7 +215,7 @@ module.exports = {
     },
 
     'Services autoassistance': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(1) > a')
+        browser.click('#listingForm > div > div > div:nth-child(1) > div > a')
 
         browser
            .waitForElementVisible('body', 'Заголовок загружен')

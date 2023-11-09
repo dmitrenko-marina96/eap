@@ -26,7 +26,7 @@ module.exports = {
     },
 
     'Переход в раздел Юридическая поддержка': function(browser) {
-        browser.click('#listingForm > div > div > div:nth-child(1) > a')
+        browser.click('#listingForm > div > div > div:nth-child(1) > div > a')
    
         browser
            .waitForElementVisible('body', 'Заголовок загружен')
