@@ -48,7 +48,7 @@ module.exports = {
             .assert.titleContains('Юридическая поддержка', 'title ok')
             .assert.textContains("h2", "Юридическая поддержка")
             .assert.attributeEquals('#Bookmark9981007 > button','class', 'btn-mark btn btn-sm btn-warning text-white' ) // проверка, что сердечко выделено
-            .expect.element('#listingForm > div > div:nth-child(2) > div > div:nth-child(2) > h3 > a').text.to.equal('Гребнева Наталья') // проверка, что после обновления страницы спец, которому поствили сердечко, стал первым в списке
+            .expect.element('#listingForm > div > div:nth-child(1) > div > div:nth-child(2) > h3 > a').text.to.equal('Гребнева Наталья') // проверка, что после обновления страницы спец, которому поствили сердечко, стал первым в списке
     },
 
     'Переход в закладки': function(browser) {
@@ -217,11 +217,11 @@ module.exports = {
             .assert.titleContains('Юридическая поддержка', 'title ok')
             .assert.textContains("h2", "Юридическая поддержка")
             .assert.attributeEquals('#Bookmark9981007 > button','class', 'btn-mark btn btn-sm btn-warning text-white' ) // проверка, что сердечко выделено
-            .expect.element('#listingForm > div > div:nth-child(2) > div > div:nth-child(2) > h3 > a').text.to.equal('Гребнева Наталья') // проверка, что после обновления страницы спец, которому поствили сердечко, стал первым в списке
+            .expect.element('#listingForm > div > div:nth-child(1) > div > div:nth-child(2) > h3 > a').text.to.equal('Гребнева Наталья') // проверка, что после обновления страницы спец, которому поствили сердечко, стал первым в списке
     },
 
     'Переход в спеца из списка спецов': function(browser) {
-        browser.click('#listingForm > div > div:nth-child(2) > div > div:nth-child(2) > h3 > a')
+        browser.click('#listingForm > div > div:nth-child(1) > div > div:nth-child(2) > h3 > a')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
