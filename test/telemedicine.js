@@ -33,35 +33,35 @@ module.exports = {
            .assert.urlContains('https://lk-zabota.pravocard.ru/usluga-10141989/12475072/?is_parent=1')
            .assert.titleContains('Телемедицина', 'title ok')
            .assert.textContains("h2", "Телемедицина")
-           .assert.textContains(".col-md-4:nth-child(1) > .services", "Запись к дежурному терапевту")
-           .assert.textContains(".col-md-4:nth-child(2) > .services", "Запись к профильному специалисту")
+           .assert.textContains(".col-md-4:nth-child(1)", "Запись к дежурному терапевту")
+           .assert.textContains(".col-md-4:nth-child(2)", "Запись к профильному специалисту")
     },
 
     'Переход в Запись к профильному специалисту': function(browser) {
-        browser.click('.col-md-4:nth-child(2) > .services')
+        browser.click('.col-md-4:nth-child(2)')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
             .assert.urlContains('https://lk-zabota.pravocard.ru/usluga-10141989/12467939/?is_parent=1')
             .assert.titleContains('Запись к профильному специалисту', 'title ok')
             .assert.textContains("h2", "Запись к профильному специалисту")
-            .assert.textContains(".col-md-4:nth-child(1) > .services", "Аллерголог")
-            .assert.textContains(".col-md-4:nth-child(2) > .services", "Гинеколог")
-            .assert.textContains(".col-md-4:nth-child(3) > .services", "Кардиолог")
-            .assert.textContains(".col-md-4:nth-child(4) > .services", "Невролог")
-            .assert.textContains(".col-md-4:nth-child(5) > .services", "Отоларинголог")
-            .assert.textContains(".col-md-4:nth-child(6) > .services", "Уролог")
-            .assert.textContains(".col-md-4:nth-child(7) > .services", "Гастроэнтеролог")
-            .assert.textContains(".col-md-4:nth-child(8) > .services", "Онколог")
-            .assert.textContains(".col-md-4:nth-child(9) > .services", "Дерматолог")
-            .assert.textContains(".col-md-4:nth-child(10) > .services", "Окулист")
-            .assert.textContains(".col-md-4:nth-child(11) > .services", "Педиатр")
-            .assert.textContains(".col-md-4:nth-child(12) > .services", "Терапевт")
-            .assert.textContains(".col-md-4:nth-child(13) > .services", "Эндокринолог")
+            .assert.textContains(".col-md-4:nth-child(1)", "Аллерголог")
+            .assert.textContains(".col-md-4:nth-child(2)", "Гинеколог")
+            .assert.textContains(".col-md-4:nth-child(3)", "Кардиолог")
+            .assert.textContains(".col-md-4:nth-child(4)", "Невролог")
+            .assert.textContains(".col-md-4:nth-child(5)", "Отоларинголог")
+            .assert.textContains(".col-md-4:nth-child(6)", "Уролог")
+            .assert.textContains(".col-md-4:nth-child(7)", "Гастроэнтеролог")
+            .assert.textContains(".col-md-4:nth-child(8)", "Онколог")
+            .assert.textContains(".col-md-4:nth-child(9)", "Дерматолог")
+            .assert.textContains(".col-md-4:nth-child(10)", "Окулист")
+            .assert.textContains(".col-md-4:nth-child(11)", "Педиатр")
+            .assert.textContains(".col-md-4:nth-child(12)", "Терапевт")
+            .assert.textContains(".col-md-4:nth-child(13)", "Эндокринолог")
     },
 
     'Аллерголог': function(browser) {
-        browser.click('.col-md-4:nth-child(1) > .services')
+        browser.click('.col-md-4:nth-child(1)')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
@@ -82,7 +82,7 @@ module.exports = {
     },        
 
     'Гинеколог': function(browser) {
-        browser.click('.col-md-4:nth-child(2) > .services')
+        browser.click('.col-md-4:nth-child(2)')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
@@ -103,7 +103,7 @@ module.exports = {
     },
 
      'Кардиолог': function(browser) {
-        browser.click('.col-md-4:nth-child(3) > .services')
+        browser.click('.col-md-4:nth-child(3)')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
@@ -124,7 +124,7 @@ module.exports = {
     },
      
     'Невролог': function(browser) {
-        browser.click('.col-md-4:nth-child(4) > .services')
+        browser.click('.col-md-4:nth-child(4)')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
@@ -145,7 +145,7 @@ module.exports = {
     },
      
     'Отоларинголог': function(browser) {
-        browser.click('.col-md-4:nth-child(5) > .services')
+        browser.click('.col-md-4:nth-child(5)')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
@@ -166,7 +166,7 @@ module.exports = {
     },
 
     'Уролог': function(browser) {
-        browser.click('.col-md-4:nth-child(6) > .services')
+        browser.click('.col-md-4:nth-child(6)')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
@@ -187,7 +187,7 @@ module.exports = {
     },
 
     'Гастроэнтеролог': function(browser) {
-        browser.click('.col-md-4:nth-child(7) > .services')
+        browser.click('.col-md-4:nth-child(7)')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
@@ -208,7 +208,7 @@ module.exports = {
     },
 
     'Онколог': function(browser) {
-        browser.click('.col-md-4:nth-child(8) > .services')
+        browser.click('.col-md-4:nth-child(8)')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
@@ -229,7 +229,7 @@ module.exports = {
     },
 
     'Дерматолог': function(browser) {
-        browser.click('.col-md-4:nth-child(9) > .services')
+        browser.click('.col-md-4:nth-child(9)')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
@@ -250,7 +250,7 @@ module.exports = {
     },
 
     'Окулист': function(browser) {
-        browser.click('.col-md-4:nth-child(10) > .services')
+        browser.click('.col-md-4:nth-child(10)')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
@@ -271,7 +271,7 @@ module.exports = {
     },
 
     'Педиатр': function(browser) {
-        browser.click('.col-md-4:nth-child(11) > .services')
+        browser.click('.col-md-4:nth-child(11)')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
@@ -292,7 +292,7 @@ module.exports = {
     },
 
     'Терапевт': function(browser) {
-        browser.click('.col-md-4:nth-child(12) > .services')
+        browser.click('.col-md-4:nth-child(12)')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
@@ -313,7 +313,7 @@ module.exports = {
     },
 
     'Эндокринолог': function(browser) {
-        browser.click('.col-md-4:nth-child(13) > .services')
+        browser.click('.col-md-4:nth-child(13)')
 
         browser
             .waitForElementVisible('body', 'Заголовок загружен')
@@ -341,8 +341,8 @@ module.exports = {
            .assert.urlContains('https://lk-zabota.pravocard.ru/usluga-10141989/12475072/?is_parent=1')
            .assert.titleContains('Телемедицина', 'title ok')
            .assert.textContains("h2", "Телемедицина")
-           .assert.textContains(".col-md-4:nth-child(1) > .services", "Запись к дежурному терапевту")
-           .assert.textContains(".col-md-4:nth-child(2) > .services", "Запись к профильному специалисту")
+           .assert.textContains(".col-md-4:nth-child(1)", "Запись к дежурному терапевту")
+           .assert.textContains(".col-md-4:nth-child(2)", "Запись к профильному специалисту")
     },
 
     'Возврат в Услуги': function(browser) {
